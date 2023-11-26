@@ -6,8 +6,15 @@
     * BONUS: The alert (has the id `alert`)
 */
 
+const form = document.querySelector("quiz-form")
+const answers = Array.from(document.querySelectorAll(".answer"))
+const questionItems = document.querySelectorAll(".question-item")
+const alert = document.querySelector("#alert")
+
 // TODO: 3. Create a submit event listener for the form that does the following.
 //    1. Prevent the default behaviour
+
+
 //    2. Get all selected answers (use the `checked` property on the input to determine if it is selected or not)
 //    3. Loop through the selected answer to see if they are correct or not (Check the value of the answer to see if it is the string "true")
 //    4. For each correct answer add the class `correct` to the parent with the class `question-item` and remove the class `incorrect`.
