@@ -29,6 +29,8 @@ form.addEventListener("submit", e => {
     questionItem.classList.remove("incorrect")
   } else {
     //    5. For each incorrect answer add the class `incorrect` to the parent with the class `question-item` and remove the class `correct`.
+    questionItem.classList.add("incorrect")
+    questionItem.classList.remove("correct")
   }
 
   //    6. BONUS: Make sure unanswered questions show up as incorrect. The easiest way to do this is to add the incorrect class and removing the correct class from all question items before checking the correct answers
